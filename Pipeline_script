@@ -1,0 +1,25 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Dev') {
+            steps {
+                echo 'Development'
+                cd C:/Users
+                date /T
+            }
+        }
+        
+         stage('Test') {
+            steps {
+                echo 'Testing'
+            }
+         }
+             stage('Deploy') {
+            steps {
+                echo 'Deploy'
+            }
+        }
+        
+    }
+}
